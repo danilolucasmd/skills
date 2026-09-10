@@ -13,6 +13,8 @@ Find it by resolving the symlink that installed this file (`readlink ~/.claude/C
 - An always-on rule goes in `rules/global.md`, this file.
 - A procedure tied to a specific task or trigger phrase goes in a new or existing skill under `skills/`.
 
+This repo is also the target when the user says to "make a skill", "create a skill", "add a skill", or "write a skill" without naming another location. A skill is always `skills/<name>/SKILL.md` in this repo, never a project's `.claude/skills/` and never `~/.claude/skills/`, which holds only the symlinks `install.sh` creates. Read the repo's `AGENTS.md` before writing one: it carries the layout, the frontmatter, and the test for whether the request is really a rule instead.
+
 Do not write to the file-based memory directory (`~/.claude/projects/*/memory/`) and do not write to a project's `CLAUDE.md`. The user will say explicitly when they mean a project's memory or something else. If a request is genuinely ambiguous about which memory is meant, ask. Ask even when an existing related entry in one store makes that store look like the obvious target: inferring silently skips the check, and a guess that happens to land right is still a guess.
 
 The repo is version controlled, so treat an edit there as a code change: make it, then stop and let the user review and commit it. Instructions about how to handle memory itself belong in this file.
