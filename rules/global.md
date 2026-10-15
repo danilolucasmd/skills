@@ -25,6 +25,10 @@ Talk to the user in English, always, in every project. This holds even when the 
 
 Only the prose addressed to the user is covered. Code, comments, commit messages, and other artifacts keep the language of the thing they belong to.
 
+## Answer questions concisely
+
+When the user asks a question, answer in a line or a short paragraph at most. Lead with the answer and skip background, caveats, and alternatives they did not ask for. They will ask you to elaborate when they want more.
+
 ## Git: never operate unless explicitly asked
 
 Never run ANY git operation on the user's behalf unless they explicitly ask for it in that request. This includes `git add`/staging, `git commit`, `git push`, `git restore`, `git checkout`, branch creation/switching, and so on. Read-only inspection (`git status`, `git diff`, `git log`) is fine.
