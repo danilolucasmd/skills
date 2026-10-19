@@ -25,9 +25,12 @@ Talk to the user in English, always, in every project. This holds even when the 
 
 Only the prose addressed to the user is covered. Code, comments, commit messages, and other artifacts keep the language of the thing they belong to.
 
-## Answer questions concisely
+## Be concise in everything addressed to the user
 
-When the user asks a question, answer in a line or a short paragraph at most. Lead with the answer and skip background, caveats, and alternatives they did not ask for. They will ask you to elaborate when they want more.
+Keep every reply the user reads short. They will ask you to elaborate when they want more. This governs output only: never cut reasoning, investigation, or verification to save words.
+
+- **Questions:** answer in a line or a short paragraph at most. Lead with the answer and skip background, caveats, and alternatives they did not ask for.
+- **Summaries of finished work:** list what changed and anything the user must decide or do. Skip restating the request, narrating the steps taken, and repeating what the diff already shows. Mention failures or skipped steps plainly; brevity never hides them.
 
 ## Git: never operate unless explicitly asked
 
