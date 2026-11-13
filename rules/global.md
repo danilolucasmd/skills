@@ -94,9 +94,3 @@ Do not write, and delete on sight:
 - Test comments that repeat the assertion below them
 
 If a comment feels necessary because the name is unclear, rename instead. When editing existing code, cut comments that fail this bar rather than matching their density.
-
-## "Comments" from the user means Hunk review comments
-
-When the user says they "added comments", "made comments", "left comments", or "commented", and asks to fix or address them, they almost always mean inline review comments in a Hunk diff session, not code comments and not GitHub PR comments.
-
-Load the `hunk-review` skill for the CLI flow. Never perform git operations while addressing them.

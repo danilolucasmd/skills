@@ -35,7 +35,6 @@ Anything already at a destination path is moved aside to `<name>.backup.<timesta
 
 | Skill | Triggers on |
 | --- | --- |
-| `hunk-review` | The user saying they left "comments" on a diff, or naming Hunk |
 | `pr-description` | Writing or updating a PR title and body |
 | `stacked-prs` | "Rebase the stack", restacking branches above the current one |
 

@@ -41,11 +41,11 @@ description: What it does, and the phrases or situations that should pull it in.
 ---
 ```
 
-Spend the effort on `description`. It is the only part the model sees before deciding whether to load the skill, so it has to name the concrete words the user actually says. `hunk-review` is the model to copy: it lists "added, made, or left comments" and then states what the user does *not* mean, because that phrase is ambiguous.
+Spend the effort on `description`. It is the only part the model sees before deciding whether to load the skill, so it has to name the concrete words the user actually says. `stacked-prs` is the model to copy: it quotes the phrases the user actually types, "rebase the stack" among them, rather than describing the task in the abstract.
 
 `install.sh` discovers skills by scanning for directories containing `SKILL.md`, so a new skill needs no change to the script. Rerun `./install.sh` to link it, and restart Claude Code so it is picked up.
 
-If a rule and a skill overlap, put the trigger in `rules/global.md` and the procedure in the skill. See the "comments means Hunk" rule for that pattern.
+If a rule and a skill overlap, put the trigger in `rules/global.md` and the procedure in the skill.
 
 ## Style for content authored here
 
