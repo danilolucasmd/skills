@@ -1,6 +1,6 @@
 ---
 name: pr-comments-review
-description: Address a reviewer's comments on a GitHub pull request one comment at a time, with the user approving each fix before it is committed. Use when the user says "address the review comments", "go through the comments on PR 123", "fix the review comments one by one", "let's handle the comments on this PR", or pastes a PR review link (a URL ending in `#pullrequestreview-<id>`). This is about comments left on GitHub, not inline Hunk notes; if the user just says they "left comments" with no PR or link, that is `hunk-review`.
+description: Address a reviewer's comments on a GitHub pull request one comment at a time, with the user approving each fix before it is committed. Use when the user says "address the review comments", "go through the comments on PR 123", "fix the review comments one by one", "let's handle the comments on this PR", or pastes a PR review link (a URL ending in `#pullrequestreview-<id>`).
 ---
 
 # Addressing PR review comments
