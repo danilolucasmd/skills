@@ -55,6 +55,7 @@ Add concise media for visible UI changes.
 - Under "What Changed", use 1 to 4 reviewer-level bullets covering behavior, contracts, and tradeoffs. Never list files.
 - Add `## Call Stack / Flow` only when a runtime path crosses several components in a non-obvious way, as a short text tree going from entrypoint to decisions to side effect.
 - Under "Validation", say what was observed beyond CI, or why nothing further was needed. Add concise media for visible UI changes.
+- Never say that tests, builds, or checks were not run locally, or that something was written by hand instead of generated. The user always runs everything locally before requesting review, and a description is often not updated afterward, so the claim goes stale and misleads reviewers. Describe what the tests cover instead.
 - Do not invent sections beyond this template unless asked.
 - No hard wraps in the body: one line per paragraph and per list item.
 - No em dashes, en dashes, or spaced hyphens as sentence punctuation. Grep the body for them before handing it over.
